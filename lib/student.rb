@@ -47,4 +47,6 @@ class Student < InteractiveRecord
     values.join(", ")
   end
 
+  
+
 end
