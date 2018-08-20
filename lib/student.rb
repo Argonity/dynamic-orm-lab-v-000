@@ -59,7 +59,7 @@ class Student < InteractiveRecord
   end
 
   def self.find_by(attr_accessor)
-    sql = "SELECT * FROM #{self.table_name} WHERE att = '#{name}'"
+    sql = "SELECT * FROM #{self.table_name} WHERE attr_accessor = '#{attr_accessor}'"
     DB[:conn].execute(sql)
   end
 
